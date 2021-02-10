@@ -1,5 +1,9 @@
 package kmitl.esd.exercise1.registration;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
 public class CompanyManager {
 
 //    public static final CompanyManager INSTANCE = new CompanyManager();

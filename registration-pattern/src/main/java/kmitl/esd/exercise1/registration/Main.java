@@ -1,6 +1,12 @@
 package kmitl.esd.exercise1.registration;
 
 
+
+/*
+*  Main method for testing
+*
+* */
+
 public class Main {
     public static void main(String[] args) {
 //        Registry<Integer, Employee> r = Registry.getInstance();
@@ -15,10 +21,10 @@ public class Main {
 
 //        CompanyManager.INSTANCE.doSthInstance(); // Singleton
 
-        Registry<Integer, CompanyManager> r1 = Registry.getInstance();
-        r1.set(1,new CompanyManager( 1,"Manage"));
-        CompanyManager c1 = r1.get(1);
-        c1.doSthInstance();
+//        Registry<Integer, CompanyManager> r1 = Registry.getInstance();
+//        r1.set(1,new CompanyManager( 1,"Manage"));
+//        CompanyManager c1 = r1.get(1);
+//        c1.doSthInstance();
 
         // create a local company
         Company companyLocal = Company.create(CompanyType.LOCAL);
