@@ -1,14 +1,21 @@
 package kmitl.esd.exercise1.composite;
 
-public class CreativeDepartment implements Department {
+//Leaf part in the composite pattern
+
+public class Team implements BusinessUnit {
 
     private Integer id;
     private String name;
 
+
+    //Show classname ("Team")
+
     public void printDepartmentName() {
         System.out.println(getClass().getSimpleName());
     }
-    public CreativeDepartment(Integer id, String name){ };
+
+
+    public Team(Integer id, String name){ };
 
     public Integer getId() {
         return id;

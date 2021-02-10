@@ -2,8 +2,24 @@
 package business;
 
 
+import java.io.IOException;
+import java.util.logging.*;
+
+
 public class Main {
+    private static Logger logger = Logger.getLogger("com.wombat.nose");
+    private static FileHandler fh;
+
+    static {
+        try {
+            fh = new FileHandler("mylog.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
+
 
         // create a local company
         Company companyLocal = Company.create(CompanyType.LOCAL);

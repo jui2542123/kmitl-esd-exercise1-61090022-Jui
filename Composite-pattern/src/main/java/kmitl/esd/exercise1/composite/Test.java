@@ -1,21 +1,19 @@
 package kmitl.esd.exercise1.composite;
 
-import kmitl.esd.exercise1.composite.CreativeDepartment;
 
+//Testing
 public class Test {
     public static void main(String args[]) {
-        Department salesDepartment = new SalesDepartment(1, "Sales department");
-        Department financialDepartment = new FinancialDepartment(2, "Financial department");
-        Department socialDepartment = new SocialDepartment(3, "Social department");
-        Department creativeDepartment = new CreativeDepartment(4, "Social department");
+        BusinessUnit salesDepartment = new Team(1, "Sales department");
+//        BusinessUnit BusinessDepartment = new Team(2, "Business department");
 
-        HeadDepartment headDepartment = new HeadDepartment(5, "Head department");
+
+        Department headDepartment = new Department(3, "Department");
 
         headDepartment.addDepartment(salesDepartment);
-        headDepartment.addDepartment(financialDepartment);
-        headDepartment.addDepartment(socialDepartment);
-        headDepartment.addDepartment(creativeDepartment);
+//        headDepartment.addDepartment(BusinessDepartment);
 
         headDepartment.printDepartmentName();
+
     }
 }
