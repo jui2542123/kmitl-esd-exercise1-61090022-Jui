@@ -1,21 +1,25 @@
 package kmitl.esd.exercise1.composite;
 
+
 //Leaf part in the composite pattern
+
+
+import java.util.logging.Logger;
 
 public class Team implements BusinessUnit {
 
     private Integer id;
     private String name;
+    private static Logger logger = Logger.getLogger("composite.Team");
 
 
-    //Show classname ("Team")
 
-    public void printDepartmentName() {
-        System.out.println(getClass().getSimpleName());
+
+    //Contain
+    public Team(Integer id, String name){
+        this.id = id;
+        this.name = name;
     }
-
-
-    public Team(Integer id, String name){ };
 
     public Integer getId() {
         return id;
@@ -23,6 +27,13 @@ public class Team implements BusinessUnit {
 
     public String getName() {
         return name;
+    }
+
+    //Show info
+
+    public void print() {
+
+        logger.info(id + " " + name);
     }
 
     public void setId(Integer id) {
