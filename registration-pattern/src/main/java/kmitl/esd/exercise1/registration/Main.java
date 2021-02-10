@@ -1,7 +1,5 @@
 package kmitl.esd.exercise1.registration;
 
-
-
 /*
 *  Main method for testing
 *
