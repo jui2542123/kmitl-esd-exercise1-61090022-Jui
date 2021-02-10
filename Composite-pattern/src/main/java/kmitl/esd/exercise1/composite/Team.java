@@ -12,9 +12,6 @@ public class Team implements BusinessUnit {
     private String name;
     private static Logger logger = Logger.getLogger("composite.Team");
 
-
-
-
     //Contain
     public Team(Integer id, String name){
         this.id = id;
